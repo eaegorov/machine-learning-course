@@ -171,8 +171,11 @@ class DeсisionTree:
         #Возвращает предсказание для новых данных на основе корня дерева
         pass
 
+
 class RandomForest:
     # TODO
+    pass
+
 
 def generate_dataset(data_dig, target_dig):
     dataset = {}
@@ -215,65 +218,6 @@ if __name__=="__main__":
         accuracy = (float(good_predictions)/(good_predictions + bad_predictions))
         acc.append(accuracy)
     print("Best steps_count is: ", s[np.argmax(accuracy)])
-
-
-    """
-    ДОП ЗАДАНИЕ
-    Валидациия по максимальной высоте дерева - 1, 2, 3, 4, 5, 6, 7
-    Валидация по максимальному количеству объектов в терминальном узле - 5, 10, 15, 20 или
-    свои значения в зависимости от размера выборки
-    """
-
-    """
-    Сохранение моделей, загрузка лучшей для тестирования
-    """
-
-    """
-    Подсчет итоговой точности на тестовой выборке
-    """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# start=time.time()
-#
-# tree = DesignTree(100, 0.1, 2, 1)
-# tree.train(data, labels)
-#
-# print "end build %s" %(time.time()-start)
-#
-# pickle_it(tree, "FIRST DATASET/tree_small_data_set.pickle")
-# print 'end save tree'
-
-
-# root = unpickle_it("FIRST DATASET/tree.pickle")
-#
-# good_predictions=0
-# bad_predictions=0
-# data=unpickle_it("FIRST DATASET/train_dataset.pickle")
-# real_classes=unpickle_it("FIRST DATASET/train_classes.pickle")
-# for i,element in enumerate(data):
-#     probability, prCl = getPrediction(element, root)
-#     if prCl==real_classes[i]:
-#         good_predictions+=1
-#     else:
-#         bad_predictions+=1
-# print("total accuracy: %s" % (float(good_predictions)/(good_predictions+bad_predictions)))
 
 
 

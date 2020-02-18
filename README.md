@@ -1,4 +1,4 @@
-# machine-learning-course
+# Machine Leaning (university course)
 Machine learning algorithms from scratch (university course)
 
 1. Polynomial (linear) regression and linear regression with gradien descent + regularization
